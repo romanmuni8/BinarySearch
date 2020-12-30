@@ -4,8 +4,8 @@ import java.util.*;
 public class BinarySearch {
 
     static int binarySearch(int[] a, int x) {
-        int left = 0, right = a.length;
-        while( right>left){
+        int left = 0, right = a.length-1;
+        while( right>=left){
             int middle = left + (right-left)/2;
             if(a[middle]==x){
                 return middle;
@@ -16,8 +16,6 @@ public class BinarySearch {
             }else{
                 return -1;
             }
-
-
         }
 
 
